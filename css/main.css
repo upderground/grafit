@@ -1,0 +1,579 @@
+@font-face {
+    font-family: 'Cinta Regular';
+    src: url('../fonts/CintaRegular.otf') format('opentype');
+    src: url('../fonts/CintaRegular.woff') format('woff'), 
+    url("../fonts/CintaRegular.ttf") format("truetype");
+ }
+ @font-face {
+    font-family: 'Cinta Thin';
+    src: url('../fonts/CintaThin.otf') format('opentype');
+    src: url('../fonts/CintaThin.woff') format('woff'), 
+    url("../fonts/CintaThin.ttf") format("truetype");
+ }
+
+/*Корневые элементы*/
+html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Cinta Regular';
+    font-size: 13.8pt;
+    color: #000;
+    overflow-x: hidden;
+}
+
+body {
+	height: 100%;
+	min-height: 100%;
+    line-height: 1.2;
+}
+
+
+/*Типовые элементы*/
+.clear{
+    clear:both;
+}
+a{
+	color: black;
+	-webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+}
+a:hover{
+	color: #2788c8;
+}
+.head_item, .head_material{
+	text-align: left;
+	font-size: 24pt;
+	margin: .5% 0;
+}
+.head_blue{
+	font-family: 'Cinta Thin';
+	width: 50%;
+	margin: 0 auto 5%;
+	color: #fff;
+	text-align: center;
+	background-color: #2788c8; 
+	font-size: 18pt;
+	padding: .7% 0;
+}
+.preview{
+	text-align: left;
+	font-size: 14pt;
+	margin: 1% 0;
+	font-weight: bold;
+	line-height: 1.2;
+}
+.preview_text{
+	text-align: left;
+	font-size: 12pt;
+}
+
+
+/*Шапка*/
+header{
+	min-width: 960px;
+
+}
+.logo_head{
+    position: relative;
+}
+.social_header{
+    position: relative;
+    padding-top: 2%;
+    padding-left: 1.5%;
+    float: right;
+ }
+.loupe{
+	position: relative;
+	top: 12px;
+	left: 97%;
+}
+.search{
+	width: 26%;
+	float: right;
+	margin-bottom: 6%;
+	padding: 2% .5% .5%;
+	border: none;
+	border-bottom: 2px solid black;
+	color: #c6c6c6;
+	font-size: 12pt;
+}
+nav{
+	text-align: left;
+	width: 100%;
+	margin-bottom: 5%;
+}
+nav a:nth-child(n+2){
+	margin-left: 5.6%;
+}
+nav a:hover{
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding: 1% 0;
+
+}
+
+/*Обертка*/
+.wrapper{
+	min-height: 100%;
+	position: relative;
+    top: 50px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/*Главная страница*/
+.main_reports_item{
+	margin-top: 4%;
+}
+.reports_img_left, .reports_img_rigth {
+	width: 50%;
+}
+.reports_img_left{
+	float: left;
+	margin-right: 3%;
+}
+.reports_img_rigth{
+	float: right;
+	margin-left: 3%;
+}
+.rep{
+	text-align: justify;
+}
+
+.main_quotes_wrap{
+	background-color: #3d95cc;
+	text-align: center;
+	padding: 2%;
+}
+.main_quote{
+	font-size: 1.6rem;
+	color: #fff;
+	font-style: italic;
+}
+.main_quote_author{
+	color: #000;
+}
+
+.interview_wrap{
+	position: relative;
+	height: 600px;
+}
+.interview_head, .interview_preview{
+	background-color: #fff;
+	padding: 0 0 2%;
+	text-align: center;
+	margin: 0 auto;
+}
+.interview_head{
+	width: 20%;
+	position: relative;	
+	top: 400px;
+	z-index: 76;
+}
+.interview_head span{
+	font-size: 1.4rem;	
+}
+.interview_preview{
+	width: 60%;
+	font-style: italic;
+	font-weight: bold;
+	position: relative;	
+	top: 360px;
+	margin-bottom: 10%;
+	z-index: 76;
+	font-size: 1.2rem;	
+	padding: 2%;
+}
+.photo_interview{
+	position: absolute;	
+	width: 100%;
+	z-index: 22;
+}
+.back_interview{
+	position: absolute;
+	left: -4.5%;
+	top:200px;
+	margin-top: -10%;
+	width: 110%;
+	z-index: 11;
+}
+/*Раздел фото*/
+.main{
+    text-align: justify;
+    text-indent: 0;
+	min-width: 960px;
+
+}
+.photo_frame{
+	width: 100%;
+	z-index: 2;
+}
+.photo_frame_wrap{
+	margin-bottom: -5%;
+}
+.arrow_right{
+	position: relative;
+	bottom: 400px;
+	left: 900px;
+	z-index: 10;
+	width: 4%;
+	cursor: pointer;
+}
+.arrow_left{
+	position: relative;
+	bottom: 400px;
+	right: 20px;
+	z-index: 10;
+	width: 4%;
+	cursor: pointer;
+}
+.photo_street_wrap{
+	float: left;
+	width: 49%;
+	margin-bottom: 5%;
+}
+.photo_report_wrap{
+	float: right;
+	width: 49%;
+	margin-left: 2%;
+	margin-bottom: 5%;
+
+}
+.photo_street, .photo_report, .photo_projects,.frame_left, .frame_right{
+	width: 100%;
+}
+
+.projects_wrap, .projects_wrap_center, .projects_wrap_right{
+	float: left;
+	margin-bottom: 3%;
+	width: 32%;
+}
+.projects_wrap_center, .projects_wrap_right{
+	margin-left: 2%;
+}
+.frame_left_wrap{
+	float: left;
+	width: 49%;
+	margin-bottom: 5%;
+}
+.frame_right_wrap{
+	float: right;
+	width: 49%;
+	margin-left: 2%;
+	margin-bottom: 1%;
+}
+
+/*Страница материала*/
+.head_material{
+	margin-left: 2%;
+} 
+.material_preview p{
+	width: 60%;
+	float: left;
+	font-style: italic;
+    font-family: 'Cinta Regular';
+	line-height: 1.5;
+	margin-left: 2%;
+}
+.material_preview span{
+	font-size: 11pt;
+	font-style: italic;
+	margin-right: 1%;
+	float: right;
+}
+.avtor_link{
+	position: relative;
+	bottom: 65px;
+	padding: 0 1.5%;
+	margin-left: 5%;
+	font-size: 16pt;
+}
+.avtor{
+	width: 15%;
+	margin-right: 1%;
+}
+.photo_material{
+	width: 90%;
+	margin:3% 5%;
+	z-index: 19;
+}
+.photo_description{
+	position: relative;
+	width: 70%;
+	float: right;
+	margin-top:-6%;
+	padding: 2% 4%;
+	background-color: #000;
+	color: #fff;
+	font-size: 11pt;
+	line-height: 1.2;
+	z-index: 99;
+}
+.material_text_after{
+	line-height: 1.4;
+	text-indent: 5%;
+	margin: 10% 0 2%;
+}
+.quote{
+	float: left;
+	width: 28%;
+	margin-right: 3%;
+	margin-bottom: 3%;
+}
+.quote_text{
+	width: 90%;
+	float: left;
+	font-weight: bold;
+	margin-right: 3%;
+}
+.material_quote{
+	float: left;
+	width: 7%;
+}
+.material_text{
+	text-indent: 5%;
+	line-height: 1.4;
+}
+
+iframe{
+	margin:3% 5% 0 5%;
+	width: 90%;
+	height: 540px;
+}
+.video_description{
+	width: 70%;
+	font-size: 11pt;
+	margin:1% 5%;
+	float: right;
+}
+
+.ref{
+	border: 2px solid #787878;
+	padding: 2%;
+	margin: 3% 3% 2% 0;
+	width: 30%;
+	float: left;
+}
+.ref_text{
+	font-size: 11pt;
+	margin: 3%;
+	text-align: left;
+}
+.ref_img{
+	width:100.5%;
+}
+.ref_head{
+	position: relative;
+	bottom: 28px;
+	padding: 1%;
+	background-color: #fff;
+	color: #2788c8;
+}
+.ref_text span{
+	font-weight: bold;
+	color: #000;
+}
+
+.on_theme{
+	float: right;
+	width: 28%;
+	margin:2% 0 3% 3%;
+}
+.on_theme_img{
+	width: 100%;
+}
+.on_theme_text{
+	line-height: 1.3;
+	color: #2788c8;
+	text-align: left;
+}
+
+.theme_comment{
+	margin: 4% 0;
+	padding: 1% 3%;
+	background-color: #d9d9d9;
+}
+.theme_comment_head{
+	position: relative;
+	bottom: 28px;
+	color: #2788c8;
+	background-color: #fff;
+	padding: .8%;
+	width: 14.1%;
+	font-weight: bold;
+}
+.theme_comment_img{
+	float: left;
+	margin:1% 2% .9% 0;
+}
+.commentator{
+	font-size: 12pt;
+	font-style: italic; 
+	margin-bottom: 2%;
+}
+.commentator span{
+	font-size: 14pt;
+	font-weight: bold;
+	font-style: normal; 
+}
+.theme_comment_text{
+	line-height: 1.2;
+}
+.tags{
+	margin-left: 10%;
+	color: #2788c8;
+}
+
+.yashare-head{
+	margin-left: 60%;
+}
+.myDiv{
+	float: right;
+	margin-top: -4%;
+}
+ .myDiv .b-share-icon_vkontakte{
+    background: url(../img/vkHead.png) no-repeat 0 0;
+    width: 64px;
+    height: 64px;
+}
+.myDiv .b-share-icon_facebook{
+    background: url(../img/fbHead.png) no-repeat 0 0;
+    width: 64px;
+    height: 64px;
+}
+.myDiv .b-share-icon_twitter{
+    background: url(../img/twitHead.png) no-repeat 0 0;
+    width: 64px;
+    height: 64px;
+}
+
+.send_email{
+    width: 80%;
+    margin: 0 auto;
+}
+.image_email{
+    position: relative;
+    float: left;
+    margin-left:3%;
+    margin-top: 4.55%;
+    z-index: 5;
+    width: 3.5%;
+}
+.email{
+    position: relative;
+    width: 63.5%;
+    color: #c2c2c2;
+    margin-top: 3%;
+    margin-left: -5%;
+    padding: 1.3%;
+    padding-left: 6.5%;
+    border:1px solid black;
+    border-radius: 8px;
+    z-index: 1;
+    font-size: 1rem;
+
+}
+.send{
+    position: relative;
+    width: 25%;
+    background-color: #a6a6a9;
+    color:#fff;
+    border:none;
+    z-index: 2;
+    padding: 1.2%;
+    border-radius: 8px;
+    font-size: 1.2rem;
+
+}
+form>p{
+	font-weight: bold;
+    margin: 7% auto 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.read_theme_head{
+	margin-top: 8%;
+	margin-bottom: 1%;
+	text-indent: 2%;
+	font-weight: bold;
+    font-size: 1.2rem;
+}
+.read_theme_item, .read_theme_item2{
+	float: left;
+	width: 30%;
+}
+.read_theme_item2{
+	margin-left: 3.3%;
+}
+.read_theme_preview{
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: left;
+}
+
+.readers_name{
+	margin-top: 7%;
+    font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 1.2;
+}
+.readers_comment_img{
+	float: left;
+	margin:3%;
+}
+.date_publication{
+  font-size: 11pt;
+  font-style: italic;
+  margin-right: 1%;
+  float: right;
+  color: #898989;
+}
+
+/*Репортажи*/
+.head_rep_item{
+	font-size: 14pt;
+	margin: 2% 0;
+}
+.report_icons, .how_much{
+	margin-top: 5%;
+	margin-right:4%;
+	float: right;.
+}
+.how_much{
+	margin-right:7%;
+}
+.num{
+	color: #808080;
+	letter-spacing: 12px;
+	padding: 0 5%;	
+}
+.num_active{
+	color: #000;
+	font-size: 18pt;
+}
+
+/*Подвал*/
+.logo_footer{
+    position: relative;
+    left:5%;
+    margin: 1%;
+} 
+.social_footer{
+    position: relative;
+    left:45%;
+    padding-left: 1.5%;
+    padding-bottom: .7%;
+}
+
+footer{
+	margin-top: 3%;
+    background-color: #161616;
+    position: absolute;
+    left: -7%;
+    width: 115%;
+    min-width: 960px;
+}
